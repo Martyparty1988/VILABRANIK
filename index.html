@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bary – Vila Praha Braník</title>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="icon" href="icon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icon-512x512.png" sizes="512x512">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="theme-color" content="#a0d8ef"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bary – Vila Praha Braník</h1>
+      <button id="settingsBtn" class="settings-btn" title="Nastavení">⚙️</button>
+      <h2 class="invoice-header">
+        Accommodation and Conference Services Prague Agency, s.r.o.
+      </h2>
+    </header>
+
+    <nav>
+      <button class="tab-btn active" data-tab="invoice">Účtenka</button>
+      <button class="tab-btn" data-tab="history">Historie</button>
+      <button class="tab-btn" data-tab="stats">Statistiky</button>
+    </nav>
+
+    <main id="app"></main>
+
+    <footer>
+      <small>© 2025 Vila Praha Braník – spravuje Martin</small>
+    </footer>
+  </div>
+  <div id="settingsModal" class="modal"></div>
+  <script src="app.js"></script>
+</body>
+</html>
